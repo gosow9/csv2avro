@@ -42,10 +42,10 @@ cd path/to/your/git/repository
 ```
 - 2. Create a pre-commit hook file inside the .git/hooks/ directory (if it doesn't already exist):
 
-bash
-Copy code
+```bash
 touch .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
+```
 Add the following script to the .git/hooks/pre-commit file:
 
 sh
@@ -83,7 +83,7 @@ If GOCHECK detects sensitive information, it will halt the commit and display a 
 
 vbnet
 Copy code
-Cert found in precommit.go at line 19: "Cert": regexp.MustCompile(`(?i)(-----BEGIN CERTIFICATE-----|-----BEGIN PRIVATE KEY-----)`)
+Cert found in precommit.go at line 19: "Cert": 
 Commit halted due to sensitive information found in 39.2703ms.
 To ignore this, press [y] to commit, or press [n] to abort commit:
 You can then decide whether to continue or abort the commit.
