@@ -1,6 +1,3 @@
-Here's a `README.md` file that you can include with your Go program, detailing the purpose of the program, how to install it in a Git environment as a pre-commit hook, and how to use it.
-
-```markdown
 # GOCHECK - Pre-Commit Hook for Sensitive Information
 
 GOCHECK is a Git pre-commit hook written in Go, designed to scan staged files for sensitive information such as tokens, passwords, certificates, and Client Identifying Data (CID) like emails or names. If sensitive data is found, the commit will be halted and the user will be given the option to either abort or force the commit.
@@ -147,11 +144,4 @@ If you wish to modify the program or contribute:
 Pull requests and issues are welcome! Please ensure that new code includes tests where appropriate and that the overall functionality of the pre-commit hook remains intact.
 
 ## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-### Key Points:
-- It explains the purpose and functionality of the program.
-- Provides clear instructions for building the Go binary and installing the pre-commit hook.
-- Demonstrates how to use the program and manage interactive or forced commits.
+MIT 
