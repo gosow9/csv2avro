@@ -64,6 +64,7 @@ func main() {
 	}
 
 	// If sensitive information is found, abort the commit
+	duration := time.Since(start)
 	if found {
 		duration := time.Since(start)
 		fmt.Printf("\033[1;31mCommit halted due to sensitive information found in %s.\033[0m\n", duration)
@@ -89,10 +90,11 @@ func main() {
 			fmt.Println("Invalid input. Commit aborted.")
 			os.Exit(1)
 		}
+	} else {
+		duration := time.Since(start)
 	}
 
 	// Print the time it took to run the check
-	duration := time.Since(start)
 	fmt.Printf("\033[1;32mGOCHECK: All files scanned successfully in %s.\033[0m\n", duration)
 }
 
